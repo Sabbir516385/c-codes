@@ -1,0 +1,43 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+class Person
+{
+public :
+    void display()
+    {
+        cout<<"I am a person"<<endl;
+    }
+};
+
+class Student : public Person
+{
+public :
+    void display()
+    {
+        cout<<"I am a Student"<<endl;
+    }
+};
+class Teacher : public Person
+{
+public :
+    void display()
+    {
+        cout<<"I am a Teacher"<<endl;
+    }
+};
+int main()
+{
+
+    Person pa;
+    pa.display();
+
+    Student sa;
+    sa.display();
+
+    Teacher s1;
+    s1.display();
+
+    getch();
+}
